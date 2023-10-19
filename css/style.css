@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.mynav{
+    flex-grow: 0;
+}
+
+.my_navbar{
+    height: 4rem;
+    border: solid black 1px;
+}
