@@ -6,6 +6,7 @@
 
 body{
     font-family: sans-serif;
+    height: 100vh;
 }
 
 .mynav{
@@ -15,4 +16,22 @@ body{
 .my_navbar{
     height: 4rem;
     border: solid black 1px;
+}
+
+.logo{
+    width: 7rem;
+}
+
+.leftmenu{
+    /* margin-top: 4rem; */
+    height: calc(100vh - 4rem);
+    width: 15%;
+    background-color: blue;
+}
+
+.browser{
+    /* margin-top: 4rem; */
+    height: calc(100vh - 4rem);
+    width: 85%;
+    background-color: aliceblue;
 }
