@@ -56,7 +56,37 @@ hr{
     margin:0.1rem
 }
 
+.codeicon{
+    padding:0;
+    font-size: 0.7rem;
+}
+
+p{
+    margin: 0.2rem ;
+    font-size: 0.7rem;
+}
+
+.cardbutton{
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
+}
+
+.iconazioni{
+    margin: 0.1rem;
+    padding: 0.2rem;
+    font-size: 0.7rem;
+    color: grey;
+    border-radius: 20%;
+    border: solid grey 1px;
+
+}
+
 .checkcard{
     width: 90%;
     margin: 1rem auto;
+}
+
+.carta {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
 }
