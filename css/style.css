@@ -15,6 +15,17 @@ body{
     margin: 0 0.2rem;
 }
 
+.ofc_btn{
+    color: white;
+    font-size: medium;
+    border: solid white 2px;
+    margin: 0 0.5rem;
+}
+
+.off_canvas {
+    color: black;
+}
+
 .mynav{
     flex-grow: 0;
 }
