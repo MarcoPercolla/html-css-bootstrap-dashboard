@@ -55,3 +55,8 @@ body{
 hr{
     margin:0.1rem
 }
+
+.checkcard{
+    width: 90%;
+    margin: 1rem auto;
+}
