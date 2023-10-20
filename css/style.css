@@ -25,7 +25,7 @@ body{
 }
 
 .logo{
-    width: 100%;
+    
     max-height: 3rem;
 }
 
@@ -33,6 +33,7 @@ body{
     /* margin-top: 4rem; */
     height: calc(100vh - 4rem);
     width: 15%;
+    min-width: 4rem;
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
