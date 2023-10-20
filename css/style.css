@@ -9,6 +9,12 @@ body{
     height: 100vh;
 }
 
+.blu_button{
+    background-color: #0d3671;
+    color: white;
+    margin: 0 0.2rem;
+}
+
 .mynav{
     flex-grow: 0;
 }
@@ -40,7 +46,7 @@ body{
 }
 
 .browser_top{
-    background-color: aqua;
+    background-color: #1C71EA;
     min-height: 5rem;
 }
 
@@ -59,13 +65,9 @@ hr{
 
 .codeicon{
     padding:0;
-    font-size: 0.7rem;
+    font-size: 1rem;
 }
 
-p{
-    margin: 0.2rem ;
-    font-size: 0.7rem;
-}
 
 .cardbutton{
     font-size: 0.6rem;
@@ -75,11 +77,35 @@ p{
 .iconazioni{
     margin: 0.1rem;
     padding: 0.2rem;
-    font-size: 0.7rem;
+    font-size: 1rem;
     color: grey;
     border-radius: 20%;
     border: solid grey 1px;
 
+}
+
+.table p{
+    margin:0;
+}
+
+.name_col{
+    width: auto;
+}
+
+.data_col{
+    width: 7rem;
+}
+
+.roi_col{
+    width: 0;
+}
+
+.stato_col{
+    width: 0;
+}
+
+.azioni_col{
+    width: 5rem;
 }
 
 .checkcard{
