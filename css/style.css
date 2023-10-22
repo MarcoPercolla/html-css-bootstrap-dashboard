@@ -156,3 +156,7 @@ h6{
     background-color: rgb(214, 214, 214);;
     border-radius: 2rem;
 }
+
+.modal-backdrop{
+    z-index: 100;
+}
