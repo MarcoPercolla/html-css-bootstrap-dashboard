@@ -43,17 +43,23 @@ body{
 .leftmenu{
     /* margin-top: 4rem; */
     height: calc(100vh - 4rem);
-    width: 15%;
-    min-width: 4rem;
+    width: 10%;
+    min-width: 3rem;
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
+    padding: 1rem 0.5rem;
+}
+
+.leftmenu a{
+    text-decoration: none;
+    color: white;
 }
 
 .browser{
     /* margin-top: 4rem; */
     height: calc(100vh - 4rem);
-    width: 85%;
+    width: 90%;
     background-color: aliceblue;
 }
 
@@ -117,4 +123,10 @@ body{
 .carta {
     margin: 1rem auto;
     padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px){
+    .leftmenu{
+        min-width: 7rem;
+    }
 }
