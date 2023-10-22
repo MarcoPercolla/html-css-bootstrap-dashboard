@@ -15,6 +15,10 @@ body{
     margin: 0 0.2rem;
 }
 
+.orangeicon{
+    color:orange
+}
+
 .ofc_btn{
     color: white;
     font-size: medium;
