@@ -45,14 +45,14 @@ body{
 }
 
 .leftmenu{
-    /* margin-top: 4rem; */
     height: calc(100vh - 4rem);
     width: 10%;
     min-width: 3rem;
     background-color: #051E34;
     background-image: url(../img/sidebar-bg.png);
     background-size: cover;
-    padding: 1rem 0.5rem;
+    padding: auto;
+    padding-top: 1rem;
 }
 
 .leftmenu a{
@@ -61,8 +61,10 @@ body{
 }
 
 .leftlink {
+    width: 100%;
     padding: 0.1rem 0.3rem;
     border-radius: 0.1rem;
+    text-align: center;
 }
 
 .browser{

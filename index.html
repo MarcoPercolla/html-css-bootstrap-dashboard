@@ -14,22 +14,28 @@
 </head>
 
 <body>
+    <!-- header fisso in alto diviso in 4 sezioni -->
     <header>
         <nav class="my_navbar navbar  navbar-expand-lg ">
-
+        
             <div class="container-fluid flex-nowrap">
+
+                <!-- logo e logo mobile -->
                 <a class="navbar-brand" href="#">
                     <img class="logo d-none d-md-block" src="./img/logo.svg" alt="Bootstrap">
                     <img class="logo d-md-none" src="./img/mobile-logo.png" alt="Bootstrap">
 
                 </a>
-                <!--  -->
+                <!-- fine logo -->
+
+                <!--barra di ricerca -->
                 <form role="search" class="searchbar w-100 d-flex align-items-center">
                     <i class="fa-solid fa-magnifying-glass mx-2"></i><input class="form-control search_control" type="search"
                         placeholder="Search" aria-label="Search">
                 </form>
-                <!--  -->
+                <!-- fine barra -->
 
+                <!--sezione icone a comparsa da tablet in poi -->
                 <div class="collapse navbar-collapse mynav" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
                         <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-list"></i></a>
@@ -38,7 +44,9 @@
 
                     </div>
                 </div>
+                <!-- fine icone -->
 
+                <!--sezione dropdown-->
                 <div class="dropdown ms-2 ">
                     <button class="btn orangeicon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-bell"></i>
@@ -49,30 +57,52 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                 </div>
+                <!-- fine dropdown -->
 
             </div>
 
 
         </nav>
     </header>
+    <!-- fine header -->
 
+    <!-- main con due sezioni 90% 10% in larghezza -->
     <main class="d-flex">
+
+        <!-- sezione di sinistra contenente link con icone e scritte a comparsa da tablet -->
         <section class="leftmenu d-flex flex-column align-items-center">
-            <a href="./index.html" class="leftlink"><i class="fa-solid fa-house"></i><span
-                    class="d-none d-lg-inline-block ms-2"> Home</span></a>
-            <a href="./index.html" class="leftlink"><i class="fa-solid fa-smoking"></i><span
-                    class="d-none d-lg-inline-block ms-2"> Smoke</span></a>
-            <a href="./index.html" class="leftlink"><i class="fa-solid fa-signal"></i><span
-                    class="d-none d-lg-inline-block ms-2"> Signal</span></a>
-            <a class="mt-auto leftlink" href="./index.html"><i class="fa-solid fa-gear"></i><span
-                    class="d-none d-lg-inline-block ms-2"> Admin</span></a>
+            <a href="./index.html" class="leftlink">
+                <i class="fa-solid fa-house"></i>
+                <span class="d-none d-lg-inline-block ms-1">Home</span>
+            </a>
+
+            <a href="./index.html" class="leftlink">
+                <i class="fa-solid fa-smoking"></i>
+                <span class="d-none d-lg-inline-block ms-1">Smoke</span>
+            </a>
+
+            <a href="./index.html" class="leftlink">
+                <i class="fa-solid fa-signal"></i>
+                <span class="d-none d-lg-inline-block ms-1">Signal</span>
+            </a>
+
+            <a class="mt-auto leftlink" href="./index.html">
+                <i class="fa-solid fa-gear"></i>
+                <span class="d-none d-lg-inline-block ms-1">Admin</span>
+            </a>
 
         </section>
+        <!-- fine sezione sinistra -->
 
+        <!-- sezione di destra (browser? se posso lol) scrollabile con una nav interna e sotto di essa delle card divise in due colonne nelle viewport successive alla mobile-->
         <section class="browser overflow-auto">
+
             <div class="container-fluid">
+
+                <!-- sezione nav interna divisa in tre colonne (colonna di destra con backdrop) -->
                 <div class="row browser_top">
 
+                    <!-- prima colonna -->
                     <div class="col-12 col-md-6 order-3 order-sm-1">
                         <div class="d-flex align-items-center flex-wrap">
                             <h2>Boolean</h2>
@@ -88,30 +118,40 @@
                         </div>
 
                     </div>
+                    <!-- fine prima colonna -->
 
+                    <!-- seconda colonna -->
                     <div class="col-12 col-md-4 order-2">
                         <p>Studenti online negli ultimi minuti</p>
                         <h4>125</h4>
                     </div>
+                    <!-- fine seconda colonna -->
 
+                    <!-- terza colonna con elemento backdrop -->
                     <div class="col-12 col-md-2 order-1 order-sm-3">
                         <div class="d-flex align-items-center">
 
                             <h6>Nuovo studente</h6>
+                            <!-- bottone per aprire il backdrop con la posizione di apertura del canvas a destra -->
                             <button class="btn ofc_btn" type="button" data-bs-toggle="offcanvas"
                                 data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i
                                     class="fa-solid fa-plus"></i>
                             </button>
+                            <!-- fine bottone backdrop -->
 
+                            <!-- struttura offcanvas backdrop -->
                             <div class="offcanvas offcanvas-end off_canvas" tabindex="-1" id="offcanvasRight"
                                 aria-labelledby="offcanvasRightLabel">
+                                <!-- header backdrop -->
                                 <div class="offcanvas-header">
                                     <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente
                                     </h5>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
                                         aria-label="Close"></button>
                                 </div>
+                                <!-- body backdrop composto da diverse form e input groups -->
                                 <div class="offcanvas-body ">
+
                                     <div class="input-group mb-3">
                                         <div class="container">
                                             <div class="row">
@@ -217,23 +257,30 @@
 
 
                                 </div>
+                                <!-- fine body -->
                             </div>
+                            <!-- fine canvas -->
                         </div>
                     </div>
+                    <!-- fine terza colonna con dentro backdrop  -->
+
                 </div>
+                <!-- fine nav del browser interno -->
 
-
-
+                <!-- sezione composta da diverse card suddivise in colonne 8 4 su 12-->
                 <div class="row browser_main">
 
+                    <!-- colonna da 8/12 -->
                     <div class="col-12 col-md-8">
 
+                        <!-- carta con dentro tabella -->
                         <div class="card w-100 carta">
                             <div class="card-header">
                                 Featured
                             </div>
-                            <!--  -->
+                            <!-- tabella con 5 sezioni di cui 2 a comparsa da tablet in poi -->
                             <table class="table table-hover align-middle">
+                                <!--header della tabella -->
                                 <thead>
                                     <tr>
                                         <th class="name_col">Nome</th>
@@ -243,26 +290,47 @@
                                         <th class="azioni_col">Azioni</th>
                                     </tr>
                                 </thead>
+                                <!-- fine header tabella -->
+
+                                <!-- righe della tabella -->
                                 <tbody>
+                                    <!-- 1 -->
                                     <tr>
+                                        <!-- VALIDO PER OGNI RIGA -->
+                                        <!-- 1°elemento righe in tabella [icona(immagine non vista nei documenti) e numero classe] -->
                                         <td>
                                             <p><button type="button"
                                                     class="btn btn-danger ratio-1x1 codeicon rounded-circle"><i
                                                         class="fa-solid fa-code ratio-1x1"></i></button> classe #109</p>
                                         </td>
+                                        <!-- fine 1°elemento -->
+
+                                        <!-- 2° elemento (data) (scompare da mobile) -->
                                         <td class="d-none d-md-table-cell">
                                             <p>12 Feb 2021</p>
                                         </td>
+                                        <!-- fine 2 elemento -->
+                                        <!-- 3°elemento (percentuale roi)  (scompare da mobile) -->
                                         <td class="d-none d-md-table-cell">
                                             <p>20%</p>
                                         </td>
+                                        <!-- fine 3 elemento -->
+                                        <!-- 4° elemento (icona di stato) -->
                                         <td>
-                                            <p><button type="button" class="btn btn-success cardbutton">Done</button>
+                                            <p>
+                                                <button type="button" class="btn btn-success cardbutton">Done</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <!-- fine 4 elemento -->
+                                        <!-- 5°elemento (bottoni per richiamare azioni) -->
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
+                                        <!-- fine 5 elemento -->
                                     </tr>
+                                    <!-- 1 -->
+                                    <!-- 2 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -279,9 +347,13 @@
                                             <p><button type="button" class="btn btn-success cardbutton">Done</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 2 -->
+                                    <!-- 3 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -298,9 +370,13 @@
                                             <p><button type="button" class="btn btn-warning cardbutton">Process</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 3 -->
+                                    <!-- 4 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -317,9 +393,13 @@
                                             <p><button type="button" class="btn btn-danger cardbutton">Failed</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 4 -->
+                                    <!-- 5 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -336,9 +416,13 @@
                                             <p><button type="button" class="btn btn-success cardbutton">Done</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 5 -->
+                                    <!-- 6 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -355,9 +439,13 @@
                                             <p><button type="button" class="btn btn-danger cardbutton">Failed</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 6 -->
+                                    <!-- 7 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -374,9 +462,13 @@
                                             <p><button type="button" class="btn btn-success cardbutton">Done</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 7 -->
+                                    <!-- 8 -->
                                     <tr>
                                         <td>
                                             <p><button type="button"
@@ -393,21 +485,28 @@
                                             <p><button type="button" class="btn btn-success cardbutton">Done</button>
                                             </p>
                                         </td>
-                                        <td><i class="fa-solid fa-pencil iconazioni"></i><i
-                                                class="fa-solid fa-trash iconazioni"></i></td>
+                                        <td>
+                                            <i class="fa-solid fa-pencil iconazioni"></i>
+                                            <i class="fa-solid fa-trash iconazioni"></i>
+                                        </td>
                                     </tr>
+                                    <!-- 8 -->
 
                                 </tbody>
+                                <!-- fine body tabella -->
 
                             </table>
+                            <!-- fine tabella -->
 
                         </div>
+                        <!-- fine prima card col-8 -->
 
+                        <!-- seconda card con elemento accordion-->
                         <div class="card w-100 carta">
                             <div class="card-header">
                                 F.A.Q.
                             </div>
-                            <!--  -->
+                            <!-- elemento accordion -->
                             <div class="accordion accordion-flush" id="accordionExample">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header">
@@ -474,20 +573,23 @@
                                 </div>
                             </div>
 
-                            <!--  -->
+                            <!-- fine accordion -->
 
 
                         </div>
+                        <!-- fine card -->
                     </div>
+                    <!-- fine colonna da 8/12 -->
 
-
+                    <!-- colonna da 4/12 -->
                     <div class="col-12 col-md-4">
 
+                        <!-- card con unordered list con 3 elementi input check -->
                         <div class="card w-100 carta">
                             <div class="card-header">
                                 todo
                             </div>
-                            <!--  -->
+                            
                             <div class="card checkcard">
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">
@@ -521,8 +623,9 @@
                                 </ul>
                             </div>
                         </div>
+                        <!-- fine card -->
 
-
+                        <!-- card con immagine, elementi vari e un link  -->
                         <div class="card w-100 carta">
                             <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -535,17 +638,18 @@
                                 <li class="list-group-item">Marzo:1500</li>
                             </ul>
                             <div class="card-body">
-                                <a href="#" class="card-link">Visualizza report approfondito</a>
+                                <a href="./index.html" class="card-link">Visualizza report approfondito</a>
                             </div>
                         </div>
+                        <!-- fine card -->
                     </div>
+                    <!-- fine colonna -->
                 </div>
-
-
+                <!-- fine sezione a due colonne 8 4  -->
             </div>
-
+            <!-- fine container browser -->
         </section>
-
+        <!-- fine browser (sezione destra) -->
     </main>
 
 
