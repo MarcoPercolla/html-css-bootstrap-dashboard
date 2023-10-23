@@ -9,27 +9,20 @@ body{
     height: 100vh;
 }
 
-.blu_button{
-    background-color: #1455b0;
-    color: white;
-    margin: 0 0.2rem;
-}
-
-.orangeicon{
-    color:orange
-}
-
-.ofc_btn{
-    color: white;
-    font-size: medium;
-    border: solid white 2px;
-    margin: 2px;
-}
-
 .off_canvas {
     color: black;
 }
 
+.form-control{
+    background-color: white;
+    border:solid grey 1px;
+}
+
+.modal-backdrop{
+    z-index: 100;
+}
+
+/* nav */
 .mynav{
     flex-grow: 0;
 }
@@ -39,11 +32,22 @@ body{
     border: solid black 1px;
 }
 
+.searchbar{
+    background-color: rgb(214, 214, 214);;
+    border-radius: 2rem;
+}
+
+.search_control{
+    background-color: rgb(214, 214, 214);
+    border:none
+
+}
+
 .logo{
     
     max-height: 3rem;
 }
-
+/* leftmenu */
 .leftmenu{
     height: calc(100vh - 4rem);
     width: 10%;
@@ -66,7 +70,7 @@ body{
     border-radius: 0.1rem;
     text-align: center;
 }
-
+/* browser */
 .browser{
     height: calc(100vh - 4rem);
     width: 90%;
@@ -81,31 +85,20 @@ body{
 }
 
 h6{
-    
     margin: 0 0.2rem;
 }
 
-.codeicon{
-    padding:0;
-    font-size: 1rem;
+.checkcard{
+    width: 90%;
+    margin: 1rem auto;
 }
 
-
-.cardbutton{
-    font-size: 0.6rem;
-    padding: 0.1rem 0.2rem;
+.carta {
+    margin: 1rem auto;
+    padding-bottom: 1rem;
 }
 
-.iconazioni{
-    margin: 0.1rem;
-    padding: 0.2rem;
-    font-size: 1rem;
-    color: grey;
-    border-radius: 20%;
-    border: solid grey 1px;
-
-}
-
+/* Elementi tabella (prossime classi) */
 .table p{
     margin:0;
 }
@@ -130,41 +123,50 @@ h6{
     width: 5rem;
 }
 
-.checkcard{
-    width: 90%;
-    margin: 1rem auto;
+/* bottoni e icone */
+.blu_button{
+    background-color: #1455b0;
+    color: white;
+    margin: 0 0.2rem;
 }
 
-.carta {
-    margin: 1rem auto;
-    padding-bottom: 1rem;
+.orangeicon{
+    color:orange
+}
+
+.ofc_btn{
+    color: white;
+    font-size: medium;
+    border: solid white 2px;
+    margin: 2px;
+}
+
+.codeicon{
+    padding:0;
+    font-size: 1rem;
 }
 
 
+.cardbutton{
+    font-size: 0.6rem;
+    padding: 0.1rem 0.2rem;
+}
+
+.iconazioni{
+    margin: 0.1rem;
+    padding: 0.2rem;
+    font-size: 1rem;
+    color: grey;
+    border-radius: 20%;
+    border: solid grey 1px;
+
+}
+
+/* hover */
 .leftlink:hover{
     background-color: rgba(255, 255, 255, 0.37);
 }
 
 .iconazioni:hover{
     scale:calc(1.1)
-}
-
-.searchbar{
-    background-color: rgb(214, 214, 214);;
-    border-radius: 2rem;
-}
-
-.modal-backdrop{
-    z-index: 100;
-}
-
-.form-control{
-    background-color: white;
-    border:solid grey 1px;
-}
-
-.search_control{
-    background-color: rgb(214, 214, 214);
-    border:none
-
 }
